@@ -1,3 +1,26 @@
-{
-	"folders": []
+library = {
+    'Harry Potter': 6,
+    'Mumi trolles': 9,
+    'Alisa': 4 
 }
+
+library[":("]= 1 
+
+book = input('Enter book')
+book1 = input('adat ili zabrat?')
+
+if book1 == 'adat':
+    if book in library:
+        library[book] += 1
+        print(library[book])
+    else:
+        library[book] = 0
+        library[book] += 1
+
+        print(library[book])
+elif book1 == 'zabrat':
+    if book in library:
+        library[book] -= 1
+        print(library[book])
+    else:
+        print("no book idi v baniy")
